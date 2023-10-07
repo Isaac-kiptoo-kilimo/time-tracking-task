@@ -1,0 +1,101 @@
+/* Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%) */
+
+/* Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%) */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body styling */
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+}
+
+
+.summary-card{
+  background-color: hsl(225, 33%, 21%);
+  width: 18%;
+  /* padding: 20px; */
+  margin: 10px;
+  border-radius: 10px;
+}
+.card-head{
+  background-color: rgb(70, 70, 107);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.card-head>img{
+margin-bottom: 30px;
+}
+
+.card-head>h2{
+  margin: 10px 0 30px 0;
+}
+
+.card-content{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* card-styling */
+.work-card{
+  background-color: aquamarine;
+  width: 18%;
+  /* padding: 0 20px; */
+  border-radius: 15px;
+}
+.work-img{
+  display: flex;
+  justify-content: end;
+   padding: 0 20px;
+}
+.work-description{
+  background-color: green;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.description-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
+
+/* footer styling */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
