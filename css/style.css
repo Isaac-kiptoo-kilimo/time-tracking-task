@@ -49,7 +49,7 @@ body {
 
 .summary-card{
   background-color: hsl(235, 46%, 20%);
-  border-radius: 10px;
+  border-radius: 20px;
   grid-area: summaryc;
 }
 .card-head{
@@ -60,6 +60,8 @@ body {
 
 .card-head>img{
 margin-bottom: 30px;
+border: 2px solid white;
+border-radius: 50%;
 }
 .card-head>h6{
   color: hsl(236, 100%, 87%);
@@ -75,8 +77,13 @@ margin-bottom: 30px;
   flex-direction: column;
   gap: 20px;
 }
+
+.card-content-para{
+  color: hsl(236, 100%, 87%);
+}
+
 h2{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
 }
 /* card-styling */
@@ -104,7 +111,10 @@ h2{
   width: 100%;
   height: 85%;
   
+}
 
+.work-description>p{
+  color: hsl(236, 100%, 87%);
 }
 
 .description-title{
