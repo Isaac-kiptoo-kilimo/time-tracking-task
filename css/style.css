@@ -29,18 +29,31 @@ body {
   color: white;
   font-family: 'Rubik', sans-serif;
   height: 100vh;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+   'summaryc workc playc studyc'
+   'summaryc exercisec socialc self-carec';
+  gap:25px;
+  width: 80vw;
+  margin-bottom: 20px;
+  height: 70vh;
+}
 
 .summary-card{
-  background-color: hsl(225, 33%, 21%);
-  width: 18%;
-  /* padding: 20px; */
-  margin: 10px;
+  background-color: hsl(235, 46%, 20%);
   border-radius: 10px;
+  grid-area: summaryc;
 }
 .card-head{
-  background-color: rgb(70, 70, 107);
+  background-color: hsl(246, 80%, 60%);
   padding: 30px;
   border-radius: 20px;
 }
@@ -62,31 +75,89 @@ margin-bottom: 30px;
 
 /* card-styling */
 .work-card{
-  background-color: aquamarine;
-  width: 18%;
-  /* padding: 0 20px; */
+  background-color: hsl(15, 100%, 70%);
   border-radius: 15px;
+  grid-area: workc;
 }
 .work-img{
   display: flex;
   justify-content: end;
    padding: 0 20px;
+   overflow: hidden;
+ }
+
+.card {
+  position: relative; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
+  z-index: 2; 
 }
+
+
 .work-description{
-  background-color: green;
+  position: relative;
+  /* z-index: 2; */
+  background-color: hsl(235, 46%, 20%);
   padding: 20px;
+  margin-top: -20px;
   border-radius: 15px;
+  
+
 }
 
 .description-title{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
 }
 
 .card-title{
     font-size: 18px;
+    font-weight: 500;
+}
+.work-description>h2{
+  margin-bottom: 10px;
 }
 
+.play-card{
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 15px;
+  /* margin: 10px; */
+  grid-area: playc;
+}
+
+.study-card{
+  background-color: hsl(348, 100%, 68%);
+  /* width: 18%; */
+  border-radius: 15px;
+  margin: 10px;
+  grid-area: studyc;
+}
+
+.exercise-card{
+  background-color: hsl(145, 58%, 55%);
+  /* width: 18%; */
+  border-radius: 15px;
+  margin: 10px;
+  grid-area: exercisec;
+}
+
+.social-card{
+  background-color: hsl(264, 64%, 52%);
+  /* width: 18%; */
+  border-radius: 15px;
+  margin: 10px;
+  grid-area: socialc;
+}
+
+.self-care-card{
+  background-color: hsl(43, 84%, 65%);
+  /* width: 18%; */
+  border-radius: 15px;
+  margin: 10px;
+  grid-area: self-carec;
+}
 
 /* footer styling */
 
@@ -99,3 +170,6 @@ margin-bottom: 30px;
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+
